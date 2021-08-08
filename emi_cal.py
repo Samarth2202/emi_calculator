@@ -9,4 +9,4 @@ n = tenure*12
 roi = st.sidebar.slider('Rate of Interest(in % per annum)',1,15)
 r = roi/12
 if st.sidebar.bottom('Calculate EMI'):
-  'Your EMI is : ',calculate_emi(principal, n, r)
+  calculate_emi(principal, n, r)
