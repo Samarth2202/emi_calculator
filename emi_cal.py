@@ -7,7 +7,7 @@ st.title('EMI Calaculator')
 principal = st.sidebar.slider('Principal Loan Amount',1000,100000)
 tenure = st.sidebar.slider('Loan Period(in years)',1,30)
 n = tenure*12
-roi = st.sidebar.slider('Rate of Interest(in % per annum)',1,15,0.1)
+roi = st.sidebar.slider('Rate of Interest(in % per annum)',1,15)s
 r = roi/12
 if st.sidebar.button('Calculate EMI'):
   'Your EMI is : ',calculate_emi(principal, n, r)
